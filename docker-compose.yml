@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  angularservice:
+    container_name: angular_container
+    build: 
+      context: .
+    ports:
+      - '4200:4200'
+    volumes:
+      - ./projet-angular/.:/app
